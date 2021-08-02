@@ -40,15 +40,22 @@ namespace Quiz_Maker_Programme
         /// <summary>
         /// randomises the quiz questions and asks the user a question
         /// </summary>
-        //public static void QuestionRandomiser()
-        //{
-        //    string[] Questions = { "What counry won the very first fifa world cup?", "What year was the very first fifa world cup?", "Whats the shortcut for the 'copy' function in most computers?", "What was Twitters original name?",
-        //    "Which animal can be seen in the Porsche logo?", "What is the common name for dried plums?", "What is the primary ingredient in hummus?", "Which country produces the most coffee in the world?",
-        //    "Which country is responsible for giving us pizza and pasta?", "Which organ has four chambers?"};
-
-        //    Random rnd = new();
-        //    int index = rnd.Next(Questions.Length);
-        //    Console.WriteLine($"Your question is : {Questions[index]}");
-        //}
+        public static void QuestionRandomiser()
+        {
+            List<string> Questions = new();
+            Questions.Add("What counry won the very first fifa world cup ? ");
+            Questions.Add("What year was the very first fifa world cup?");
+            Questions.Add("Whats the shortcut for the 'copy' function in most computers?");
+            Questions.Add("What was Twitters original name?");
+            Questions.Add("Which animal can be seen in the Porsche logo?");
+            Questions.Add("What is the common name for dried plums?");
+            Questions.Add("What is the primary ingredient in hummus?");
+            Questions.Add("Which country produces the most coffee in the world?");
+            Questions.Add("Which country is responsible for giving us pizza and pasta?");
+            Questions.Add("Which organ has four chambers?");
+            Random rnd = new();
+            int randomQuest = rnd.Next(Questions.Count);
+            Console.WriteLine($"Your question is : {Questions[randomQuest]}");
+        }
     }
 }
