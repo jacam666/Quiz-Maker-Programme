@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Quiz_Maker_Programme
 {
     class UI
-    {
+    {/// <summary>
+    /// Welcomes user to game, asks player for their name and if they are ready to play
+    /// </summary>
         public static void DisplayWelcomeMessage()
         {
             string playerName;
