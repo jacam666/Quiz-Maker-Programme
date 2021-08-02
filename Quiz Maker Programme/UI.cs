@@ -37,7 +37,9 @@ namespace Quiz_Maker_Programme
             }
             return wantsToPlay;
         }
-
+        /// <summary>
+        /// randomises the quiz questions and asks the user a question
+        /// </summary>
         public static void QuestionRandomiser()
         {
             string[] Questions = { "What counry won the very first fifa world cup?", "What year was the very first fifa world cup?", "Whats the shortcut for the 'copy' function in most computers?", "What was Twitters original name?",
