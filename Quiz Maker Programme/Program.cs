@@ -6,13 +6,10 @@ namespace Quiz_Maker_Programme
     {
         static void Main(string[] args)
         {
+
+            UI.DisplayWelcomeMessage();
             
-            string playerName;
             string response;
-            Console.Write("Hi there please enter your name: ");
-            playerName = Console.ReadLine();
-            Console.WriteLine($"Welcome to my Quiz Game {playerName} are you ready to play? ");
-            
             bool wantsToPlay = false;
             Console.WriteLine("Play Quiz Game? yes/no");
             response = Console.ReadLine();
