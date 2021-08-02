@@ -8,21 +8,8 @@ namespace Quiz_Maker_Programme
         {
 
             UI.DisplayWelcomeMessage();
+            UI.DecisionToPlay();
             
-            string response;
-            bool wantsToPlay = false;
-            Console.WriteLine("Play Quiz Game? yes/no");
-            response = Console.ReadLine();
-            if (response == "yes")
-            {
-                wantsToPlay = true;
-            }
-            
-            
-              
-            
-            
-
 
 
         }
