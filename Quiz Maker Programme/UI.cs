@@ -21,7 +21,10 @@ namespace Quiz_Maker_Programme
 
 
         }
-
+        /// <summary>
+        /// gives the user an option to play
+        /// </summary>
+        /// <returns>decision to play</returns>
         public static bool DecisionToPlay()
         {
             string response;
