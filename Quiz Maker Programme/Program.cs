@@ -11,65 +11,67 @@ namespace Quiz_Maker_Programme
             UI.DisplayWelcomeMessage();
             UI.DecisionToPlay();
             //UI.QuizQuestions();
-            UI.QuestionRandomiser();
+            //UI.QuestionRandomiser();
 
-            List<QuestionAndAnswer> GameCards = new();
 
-            QuestionAndAnswer GameCard = new();
-            GameCard.Question = "What country won the very first fifa world cup?";
-            GameCard.Answers.Add("Germany");
-            GameCard.Answers.Add("Italy");
-            GameCard.Answers.Add("UK");
-            GameCard.Answers.Add("Russia");
-            GameCard.Answers.Add("Uruguay");
-            GameCard.CorrectAnswer = "D";
+            QuestionAndAnswer GameCard1 = new();
+            GameCard1.Question = "What country won the very first fifa world cup?";
+            GameCard1.Answers.Add("A)  Germany");
+            GameCard1.Answers.Add("B)  Italy");
+            GameCard1.Answers.Add("C)  UK");
+            GameCard1.Answers.Add("D)  Russia");
+            GameCard1.Answers.Add("E)  Uruguay");
+            GameCard1.CorrectAnswer = "E";
 
             QuestionAndAnswer GameCard2 = new();
             GameCard2.Question = "What year was the very first fifa world cup?";
-            GameCard2.Answers.Add("1930");
-            GameCard2.Answers.Add("1918");
-            GameCard2.Answers.Add("1934");
-            GameCard2.Answers.Add("1940");
+            GameCard2.Answers.Add("A)  1930");
+            GameCard2.Answers.Add("B)  1918");
+            GameCard2.Answers.Add("C)  1934");
+            GameCard2.Answers.Add("D)  1940");
             GameCard2.CorrectAnswer = "A";
 
             QuestionAndAnswer GameCard3 = new();
             GameCard3.Question = "Whats the shortcut for the 'copy' function in most computers?";
-            GameCard3.Answers.Add("ctrl A");
-            GameCard3.Answers.Add("ctrl C");
-            GameCard3.Answers.Add("ctrl 9");
-            GameCard3.Answers.Add("ctrl D");
+            GameCard3.Answers.Add("A)  ctrl A");
+            GameCard3.Answers.Add("B)  ctrl C");
+            GameCard3.Answers.Add("C)  ctrl 9");
+            GameCard3.Answers.Add("D)  ctrl D");
             GameCard3.CorrectAnswer = "B";
 
             QuestionAndAnswer GameCard4 = new();
             GameCard4.Question = "Which animal can be seen in the Porsche logo?";
-            GameCard4.Answers.Add("Lion");
-            GameCard4.Answers.Add("Tiger");
-            GameCard4.Answers.Add("Elephant");
-            GameCard4.Answers.Add("Horse");
+            GameCard4.Answers.Add("A)  Lion");
+            GameCard4.Answers.Add("B)  Tiger");
+            GameCard4.Answers.Add("C)  Elephant");
+            GameCard4.Answers.Add("D)  Horse");
             GameCard4.CorrectAnswer = "D";
 
-            Random rnd = new();
-            int randomQuest = rnd.Next(GameCards.Count);
-            Console.WriteLine($"Your question is : {GameCards[randomQuest]}");
+            List<QuestionAndAnswer> GameCards = new();
+            {
+                GameCards.Add(GameCard1);
+                GameCards.Add(GameCard2);
+                GameCards.Add(GameCard3);
+                GameCards.Add(GameCard4);
 
-
-            GameCards.Add(GameCard);
-            GameCards.Add(GameCard2);
-            GameCards.Add(GameCard3);
-            GameCards.Add(GameCard4);
-
-
-            bool isCorrect = UI.AskUserForAnswer(GameCards[0]);
-            
-
-
-
+                Random rnd = new();
+                int RandomQuestions = rnd.Next(GameCards.Count);               
+                UI.AskUserForAnswer(GameCards[RandomQuestions]);
+                
+            }
 
             
-            
 
 
-            int attempts = 10;
+
+
+
+
+
+
+
+
+            //int attempts = 10;
             //Questions QuizQuestions = new();
             //QuizQuestions.FirstQuestion = "What country won the very first fifa world cup?";
             //QuizQuestions.SecondQuestion = "What year was the very first fifa world cup?";
@@ -113,33 +115,33 @@ namespace Quiz_Maker_Programme
 
 
         }
-        public class Questions
-        {
-            public string FirstQuestion;
-            public string SecondQuestion;
-            public string ThirdQuestion;
-            public string ForthQuestion;
-            public string FifthQuestion;
-            public string SixthQuestion;
-            public string SeventhQuestion;
-            public string EighthQuestion;
-            public string NinthQuestion;
-            public string TenthQuestion;
+        //public class Questions
+        //{
+        //    public string FirstQuestion;
+        //    public string SecondQuestion;
+        //    public string ThirdQuestion;
+        //    public string ForthQuestion;
+        //    public string FifthQuestion;
+        //    public string SixthQuestion;
+        //    public string SeventhQuestion;
+        //    public string EighthQuestion;
+        //    public string NinthQuestion;
+        //    public string TenthQuestion;
 
-        }
-        public class Answers
-        {
-            public string FirstQuestionAnswers;
-            public string SecondQuestionAnswers;
-            public string ThirdQuestionAnswers;
-            public string ForthQuestionAnswers;
-            public string FifthQuestionAnswers;
-            public string SixthQuestionAnswers;
-            public string SeventhQuestionAnswers;
-            public string EighthQuestionAnswers;
-            public string NinthQuestionAnswers;
-            public string TenthQuestionAnswers;
-        }
+        //}
+        //public class Answers
+        //{
+        //    public string FirstQuestionAnswers;
+        //    public string SecondQuestionAnswers;
+        //    public string ThirdQuestionAnswers;
+        //    public string ForthQuestionAnswers;
+        //    public string FifthQuestionAnswers;
+        //    public string SixthQuestionAnswers;
+        //    public string SeventhQuestionAnswers;
+        //    public string EighthQuestionAnswers;
+        //    public string NinthQuestionAnswers;
+        //    public string TenthQuestionAnswers;
+        //}
     }
 
 
