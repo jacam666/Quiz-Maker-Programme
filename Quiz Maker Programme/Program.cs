@@ -15,8 +15,6 @@ namespace Quiz_Maker_Programme
 
             List<QuestionAndAnswer> GameCards = new();
 
-
-
             QuestionAndAnswer GameCard = new();
             GameCard.Question = "What country won the very first fifa world cup?";
             GameCard.Answers.Add("Germany");
@@ -50,6 +48,9 @@ namespace Quiz_Maker_Programme
             GameCard4.Answers.Add("Horse");
             GameCard4.CorrectAnswer = "D";
 
+            Random rnd = new();
+            int randomQuest = rnd.Next(GameCards.Count);
+            Console.WriteLine($"Your question is : {GameCards[randomQuest]}");
 
 
             GameCards.Add(GameCard);
