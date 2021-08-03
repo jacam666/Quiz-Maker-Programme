@@ -55,11 +55,12 @@ namespace Quiz_Maker_Programme
             //Random rnd = new();
             //int randomQuest = rnd.Next(Questions.Count);
             //Console.WriteLine($"Your question is : {Questions[randomQuest]}");
+
         }
 
         public static void QuizQuestions()
         {
-            Program.Questions QuizQuestions = new();
+            //Program.Questions QuizQuestions = new();
 
             //QuizQuestions.FirstQuestion = "What counry won the very first fifa world cup?";
             //QuizQuestions.SecondQuestion = "What year was the very first fifa world cup?";
@@ -72,5 +73,28 @@ namespace Quiz_Maker_Programme
             //QuizQuestions.NinthQuestion = "Which country is responsible for giving us pizza and pasta?";
             //QuizQuestions.TenthQuestion = "Which organ has four chambers?";
         }
+
+        public static void DisplayAgameCard(QuestionAndAnswer gc)
+        {
+            Console.WriteLine(gc.Question);
+            for (int i = 0; i < gc.Answers.Count; i++)
+            {
+                Console.WriteLine(gc.Answers[i]);
+            }
+        }
+
+        public static bool AskUserForAnswer(QuestionAndAnswer gc)
+        {
+            DisplayAgameCard(gc);
+
+            if (Console.ReadLine() == gc.CorrectAnswer)
+            {
+                return true;
+            }
+
+            return false;
+
+        }
+
     }
 }
