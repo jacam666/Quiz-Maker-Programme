@@ -54,13 +54,35 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard3);
                 GameCards.Add(GameCard4);
 
+
                 Random rnd = new();
-                int RandomQuestions = rnd.Next(GameCards.Count);               
-                UI.AskUserForAnswer(GameCards[RandomQuestions]);
-                
+                int RandomQuestions = rnd.Next(GameCards.Count);
+
+                UI.DisplayAgameCard(GameCards[RandomQuestions]);
+                //UI.AskUserForAnswer(GameCards[RandomQuestions]);
+                Console.ReadLine();
+                if(Console.ReadLine() == GameCard1.CorrectAnswer)
+                {
+                    Console.WriteLine("congrats that is correct");
+                }
+                if (Console.ReadLine() == GameCard2.CorrectAnswer)
+                {
+                    Console.WriteLine("congrats that is correct");
+                }
+                if (Console.ReadLine() == GameCard3.CorrectAnswer)
+                {
+                    Console.WriteLine("congrats that is correct");
+                }
+                if (Console.ReadLine() == GameCard4.CorrectAnswer)
+                {
+                    Console.WriteLine("congrats that is correct");
+                }
+                //bool isCorrect = UI.AskUserForAnswer(GameCards[RandomQuestions]);
             }
 
-            
+
+
+
 
 
 
