@@ -80,12 +80,14 @@ namespace Quiz_Maker_Programme
             GameCard8.CorrectAnswer = "C";
 
             QuestionAndAnswer GameCard9 = new();
-            GameCard9.Question = "Which country produces the most coffee in the world?";
-            GameCard9.Answers.Add("A)  Columbia");
-            GameCard9.Answers.Add("B)  Usa");
-            GameCard9.Answers.Add("C)  Brazil");
-            GameCard9.Answers.Add("D)  Mexico");
+            GameCard9.Question = "Which country is responsible for giving us pizza and pasta?";
+            GameCard9.Answers.Add("A)  England");
+            GameCard9.Answers.Add("B)  Poland");
+            GameCard9.Answers.Add("C)  Italy");
+            GameCard9.Answers.Add("D)  Russia");
             GameCard9.CorrectAnswer = "C";
+
+            
 
             List<QuestionAndAnswer> GameCards = new();
             {
