@@ -95,17 +95,17 @@ namespace Quiz_Maker_Programme
             }
         }
 
-        public static bool AskUserForAnswer(QuestionAndAnswer gc)
-        {
-            DisplayAgameCard(gc);
-            Console.ReadLine();
-            if (Console.ReadLine() == gc.CorrectAnswer)
-            {
-                return true;
-            }
-
-            return false;
-
+        public static void AskUserForAnswer(QuestionAndAnswer gc)
+        {                      
+                DisplayAgameCard(gc);
+                if (Console.ReadLine() == gc.CorrectAnswer)
+                {
+                    Console.WriteLine("congrats that answer is correct");
+                }
+                else
+                {
+                    Console.WriteLine("Unlucky that is a wrong answer");
+                }            
         }
 
     }

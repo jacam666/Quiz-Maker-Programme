@@ -49,35 +49,18 @@ namespace Quiz_Maker_Programme
 
             List<QuestionAndAnswer> GameCards = new();
             {
+
                 GameCards.Add(GameCard1);
                 GameCards.Add(GameCard2);
                 GameCards.Add(GameCard3);
                 GameCards.Add(GameCard4);
-
-
-                Random rnd = new();
-                int RandomQuestions = rnd.Next(GameCards.Count);
-
-                UI.DisplayAgameCard(GameCards[RandomQuestions]);
-                //UI.AskUserForAnswer(GameCards[RandomQuestions]);
-                Console.ReadLine();
-                if(Console.ReadLine() == GameCard1.CorrectAnswer)
+                for (int i = 0; i < GameCards.Count; i++)
                 {
-                    Console.WriteLine("congrats that is correct");
+                    Random rnd = new();
+                    int RandomIndex = rnd.Next(GameCards.Count);
+                    UI.AskUserForAnswer(GameCards[RandomIndex]);
                 }
-                if (Console.ReadLine() == GameCard2.CorrectAnswer)
-                {
-                    Console.WriteLine("congrats that is correct");
-                }
-                if (Console.ReadLine() == GameCard3.CorrectAnswer)
-                {
-                    Console.WriteLine("congrats that is correct");
-                }
-                if (Console.ReadLine() == GameCard4.CorrectAnswer)
-                {
-                    Console.WriteLine("congrats that is correct");
-                }
-                //bool isCorrect = UI.AskUserForAnswer(GameCards[RandomQuestions]);
+                              
             }
 
 
@@ -172,6 +155,6 @@ namespace Quiz_Maker_Programme
 
 
 
-
-
 }
+
+
