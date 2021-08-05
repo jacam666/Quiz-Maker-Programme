@@ -97,7 +97,10 @@ namespace Quiz_Maker_Programme
                 Console.WriteLine(gc.Answers[i]);
             }
         }
-
+        /// <summary>
+        /// asks user for an answer and displays if that is correct or incorrect
+        /// </summary>
+        /// <param name="gc"></param>
         public static void AskUserForAnswer(QuestionAndAnswer gc)
         {                      
                 DisplayAgameCard(gc);
