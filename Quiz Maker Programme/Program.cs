@@ -63,6 +63,14 @@ namespace Quiz_Maker_Programme
             GameCard6.Answers.Add("D)  Dates");
             GameCard6.CorrectAnswer = "A";
 
+            QuestionAndAnswer GameCard7 = new();
+            GameCard7.Question = "What is the primary ingredient in hummus?";
+            GameCard7.Answers.Add("A)  Rice");
+            GameCard7.Answers.Add("B)  ChickPeas");
+            GameCard7.Answers.Add("C)  Beans");
+            GameCard7.Answers.Add("D)  Eggs");
+            GameCard7.CorrectAnswer = "B";
+
             List<QuestionAndAnswer> GameCards = new();
             {
 
@@ -72,6 +80,7 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard4);
                 GameCards.Add(GameCard5);
                 GameCards.Add(GameCard6);
+                GameCards.Add(GameCard7);
                 for (int i = 0; i < GameCards.Count; i++)
                 {
                     Random rnd = new();
