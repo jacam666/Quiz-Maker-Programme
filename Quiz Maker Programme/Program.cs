@@ -79,6 +79,14 @@ namespace Quiz_Maker_Programme
             GameCard8.Answers.Add("D)  Mexico");
             GameCard8.CorrectAnswer = "C";
 
+            QuestionAndAnswer GameCard9 = new();
+            GameCard9.Question = "Which country produces the most coffee in the world?";
+            GameCard9.Answers.Add("A)  Columbia");
+            GameCard9.Answers.Add("B)  Usa");
+            GameCard9.Answers.Add("C)  Brazil");
+            GameCard9.Answers.Add("D)  Mexico");
+            GameCard9.CorrectAnswer = "C";
+
             List<QuestionAndAnswer> GameCards = new();
             {
 
@@ -90,6 +98,7 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard6);
                 GameCards.Add(GameCard7);
                 GameCards.Add(GameCard8);
+                GameCards.Add(GameCard9);
                 for (int i = 0; i < GameCards.Count; i++)
                 {
                     Random rnd = new();

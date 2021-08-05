@@ -98,7 +98,9 @@ namespace Quiz_Maker_Programme
         public static void AskUserForAnswer(QuestionAndAnswer gc)
         {                      
                 DisplayAgameCard(gc);
-                if (Console.ReadLine() == gc.CorrectAnswer)
+            string Choice = Console.ReadLine().ToUpper();
+            
+                if (Choice == gc.CorrectAnswer)
                 {
                     Console.WriteLine("congrats that answer is correct");
                 }
