@@ -108,7 +108,7 @@ namespace Quiz_Maker_Programme
             
                 if (Choice == gc.CorrectAnswer)
                 {
-                    Console.WriteLine("congrats that answer is correct");
+                    Console.WriteLine("congrats that answer is correct\n");
                 }
                 else
                 {
