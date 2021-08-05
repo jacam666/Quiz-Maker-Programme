@@ -87,7 +87,13 @@ namespace Quiz_Maker_Programme
             GameCard9.Answers.Add("D)  Russia");
             GameCard9.CorrectAnswer = "C";
 
-            
+            QuestionAndAnswer GameCard10 = new();
+            GameCard10.Question = "Which organ has four chambers?";
+            GameCard10.Answers.Add("A)  Heart");
+            GameCard10.Answers.Add("B)  Lungs");
+            GameCard10.Answers.Add("C)  Liver");
+            GameCard10.Answers.Add("D)  Kidneys");
+            GameCard10.CorrectAnswer = "A";
 
             List<QuestionAndAnswer> GameCards = new();
             {
