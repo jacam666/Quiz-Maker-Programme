@@ -47,6 +47,14 @@ namespace Quiz_Maker_Programme
             GameCard4.Answers.Add("D)  Horse");
             GameCard4.CorrectAnswer = "D";
 
+            QuestionAndAnswer GameCard5 = new();
+            GameCard5.Question = "What was Twitters original name?";
+            GameCard5.Answers.Add("A)  Twitter");
+            GameCard5.Answers.Add("B)  Twitch");
+            GameCard5.Answers.Add("C)  Twicker");
+            GameCard5.Answers.Add("D)  InstaTwitch");
+            GameCard5.CorrectAnswer = "A";
+
             List<QuestionAndAnswer> GameCards = new();
             {
 
