@@ -85,7 +85,10 @@ namespace Quiz_Maker_Programme
             //QuizQuestions.NinthQuestion = "Which country is responsible for giving us pizza and pasta?";
             //QuizQuestions.TenthQuestion = "Which organ has four chambers?";
         }
-
+        /// <summary>
+        /// Displays a game card
+        /// </summary>
+        /// <param name="gc"></param>
         public static void DisplayAgameCard(QuestionAndAnswer gc)
         {
             Console.WriteLine(gc.Question);
