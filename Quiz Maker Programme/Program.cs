@@ -55,6 +55,14 @@ namespace Quiz_Maker_Programme
             GameCard5.Answers.Add("D)  InstaTwitch");
             GameCard5.CorrectAnswer = "A";
 
+            QuestionAndAnswer GameCard6 = new();
+            GameCard6.Question = "What is the common name for dried plums?";
+            GameCard6.Answers.Add("A)  Prunes");
+            GameCard6.Answers.Add("B)  Raisins");
+            GameCard6.Answers.Add("C)  Saltanas");
+            GameCard6.Answers.Add("D)  Dates");
+            GameCard6.CorrectAnswer = "A";
+
             List<QuestionAndAnswer> GameCards = new();
             {
 
@@ -62,6 +70,8 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard2);
                 GameCards.Add(GameCard3);
                 GameCards.Add(GameCard4);
+                GameCards.Add(GameCard5);
+                GameCards.Add(GameCard6);
                 for (int i = 0; i < GameCards.Count; i++)
                 {
                     Random rnd = new();
