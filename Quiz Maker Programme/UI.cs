@@ -98,7 +98,7 @@ namespace Quiz_Maker_Programme
             }
         }
         /// <summary>
-        /// asks user for an answer and displays if that is correct or incorrect
+        /// asks user for an answer and displays if that is correct or incorrect. also informs user of 1 attempt lost if the answer is incorrect
         /// </summary>
         /// <param name="gc"></param>
         public static void AskUserForAnswer(QuestionAndAnswer gc)
