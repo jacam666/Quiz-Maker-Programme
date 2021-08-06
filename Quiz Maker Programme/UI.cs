@@ -125,7 +125,7 @@ namespace Quiz_Maker_Programme
                     attempts -= 1;
                 }
 
-                Console.WriteLine($"You have {attempts} attempts remaining");
+                Console.WriteLine($"You have {attempts} attempts remaining\n");
             }
         }
 
