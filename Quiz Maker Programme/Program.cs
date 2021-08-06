@@ -105,13 +105,24 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard8);
                 GameCards.Add(GameCard9);
                 GameCards.Add(GameCard10);
-
-                for (int i = 0; i < GameCards.Count; i++)
+                int attempts = 10;
+                while (attempts <= 10)
                 {
-                    Random rnd = new();
-                    int RandomIndex = rnd.Next(GameCards.Count);
-                    UI.AskUserForAnswer(GameCards[RandomIndex]);
+                    for (int i = 0; i < GameCards.Count; i++)
+                    {
+                        Random rnd = new();
+                        int RandomIndex = rnd.Next(GameCards.Count);
+                        UI.AskUserForAnswer(GameCards[RandomIndex]);
+                        
+                    }attempts =- 1;
+
                 }
+                //for (int i = 0; i < GameCards.Count; i++)
+                //{
+                //    Random rnd = new();
+                //    int RandomIndex = rnd.Next(GameCards.Count);
+                //    UI.AskUserForAnswer(GameCards[RandomIndex]);
+                //}
                               
             }
 

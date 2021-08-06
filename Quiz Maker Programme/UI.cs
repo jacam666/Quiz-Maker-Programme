@@ -112,7 +112,7 @@ namespace Quiz_Maker_Programme
                 }
                 else
                 {
-                    Console.WriteLine("Unlucky that is a wrong answer");
+                    Console.WriteLine("Unlucky that is a wrong answer\n");
                 }            
         }
 
