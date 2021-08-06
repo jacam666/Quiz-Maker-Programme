@@ -112,6 +112,7 @@ namespace Quiz_Maker_Programme
                         int RandomIndex = rnd.Next(GameCards.Count);
                         UI.AskUserForAnswer(GameCards[RandomIndex]);
                     }
+
                    
             }
 

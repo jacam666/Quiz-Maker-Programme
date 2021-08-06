@@ -17,6 +17,7 @@ namespace Quiz_Maker_Programme
             Console.Write("Hi there please enter your name: ");
             playerName = Console.ReadLine();
             Console.WriteLine($"Welcome to my Quiz Game {playerName} are you ready to play? ");
+            Console.WriteLine($"You start the game with 10 attempts, good luck\n");
 
 
         }
@@ -105,34 +106,29 @@ namespace Quiz_Maker_Programme
         {
             int Score = 0;
             int attempts = 10;
-            Console.WriteLine($"You start the game with {attempts} attempts, good luck\n");
-            for (int i = 0; i < attempts; i--)
-            {               
-                DisplayAgameCard(gc);                
-                string Choice = Console.ReadLine().ToUpper();
+            
+            DisplayAgameCard(gc);
+            string Choice = Console.ReadLine().ToUpper();
 
-                if (Choice == gc.CorrectAnswer)
-                {
-                    Console.WriteLine("Congrats that answer is correct\n");
-                    
-                }
-                else
-                {
-                    Console.WriteLine("Unlucky that is a wrong answer\n");
-                } 
-                if (Choice != gc.CorrectAnswer)
-                {
-                    attempts -= 1;
-                }
-
-                Console.WriteLine($"You have {attempts} attempts remaining\n");
+            if (Choice == gc.CorrectAnswer)
+            {
+                Console.WriteLine("Congrats that answer is correct\n");
+                Score += 1;
+                Console.WriteLine("score = " + Score);
             }
+            else
+            {
+                Console.WriteLine("Unlucky that is a wrong answer\n");
+                attempts -= 1;
+            }
+            Console.WriteLine($"You have {attempts} attempts remaining\n");
+
         }
 
-        
-        
-            
 
-        
+
+
+
+
     }
 }
