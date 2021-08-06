@@ -10,7 +10,7 @@ namespace Quiz_Maker_Programme
         {
             UI.DisplayWelcomeMessage();
             UI.DecisionToPlay();
-            
+
             QuestionAndAnswer GameCard1 = new();
             GameCard1.Question = "What country won the very first fifa world cup?";
             GameCard1.Answers.Add("A)  Germany");
@@ -104,26 +104,15 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard7);
                 GameCards.Add(GameCard8);
                 GameCards.Add(GameCard9);
-                GameCards.Add(GameCard10);
-                int attempts = 10;
-                while (attempts <= 10)
-                {
+                GameCards.Add(GameCard10);               
+                   
                     for (int i = 0; i < GameCards.Count; i++)
                     {
                         Random rnd = new();
                         int RandomIndex = rnd.Next(GameCards.Count);
                         UI.AskUserForAnswer(GameCards[RandomIndex]);
-                        
-                    }attempts =- 1;
-
-                }
-                //for (int i = 0; i < GameCards.Count; i++)
-                //{
-                //    Random rnd = new();
-                //    int RandomIndex = rnd.Next(GameCards.Count);
-                //    UI.AskUserForAnswer(GameCards[RandomIndex]);
-                //}
-                              
+                    }
+                   
             }
 
 

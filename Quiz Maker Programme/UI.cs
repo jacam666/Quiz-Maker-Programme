@@ -102,18 +102,24 @@ namespace Quiz_Maker_Programme
         /// </summary>
         /// <param name="gc"></param>
         public static void AskUserForAnswer(QuestionAndAnswer gc)
-        {                      
+        {
+            int attempts = 10;
+            for (int i = 0; i < attempts; i--)
+            {
                 DisplayAgameCard(gc);
-            string Choice = Console.ReadLine().ToUpper();
-            
+                string Choice = Console.ReadLine().ToUpper();
+
                 if (Choice == gc.CorrectAnswer)
                 {
-                    Console.WriteLine("congrats that answer is correct\n");
+                    Console.WriteLine("Congrats that answer is correct\n");
                 }
                 else
                 {
                     Console.WriteLine("Unlucky that is a wrong answer\n");
-                }            
+                }
+                attempts -= 1;
+                Console.WriteLine($"You have {attempts} attempts remaining");
+            }
         }
 
     }
