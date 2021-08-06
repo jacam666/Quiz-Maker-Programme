@@ -104,8 +104,10 @@ namespace Quiz_Maker_Programme
         public static void AskUserForAnswer(QuestionAndAnswer gc)
         {
             int attempts = 10;
+            Console.WriteLine($"You start the game with {attempts} attempts, good luck");
             for (int i = 0; i < attempts; i--)
             {
+                
                 DisplayAgameCard(gc);
                 string Choice = Console.ReadLine().ToUpper();
 
