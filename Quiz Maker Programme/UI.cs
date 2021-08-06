@@ -118,8 +118,12 @@ namespace Quiz_Maker_Programme
                 else
                 {
                     Console.WriteLine("Unlucky that is a wrong answer\n");
+                } 
+                if (Choice != gc.CorrectAnswer)
+                {
+                    attempts -= 1;
                 }
-                attempts -= 1;
+                
                 Console.WriteLine($"You have {attempts} attempts remaining");
             }
         }
