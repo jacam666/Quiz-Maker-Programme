@@ -103,18 +103,25 @@ namespace Quiz_Maker_Programme
         /// </summary>
         /// <param name="gc"></param>
         public static bool AskUserForAnswer(QuestionAndAnswer gc)
-        {            
+        {
             DisplayAgameCard(gc);
-
+            
             string Choice = Console.ReadLine().ToUpper();
+            
 
             if (Choice == gc.CorrectAnswer)
             {
-                return true;               
+                return true;
             }
             return false;
+            
         }
+        
 
+        public static void IfCorrectAnswer()
+        {
+            Console.WriteLine("Congrats that answer is correct\n");
+        }
 
 
 

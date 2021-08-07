@@ -113,11 +113,13 @@ namespace Quiz_Maker_Programme
                     UI.AskUserForAnswer(GameCards[RandomIndex]);
                 }
             }
+
             //int Score = 0;
             //int attempts = 10;
             //string Choice = Console.ReadLine().ToUpper();
+            //string 
 
-            //if (Choice == GameCards.CorrectAnswer)
+            //if (Choice == )
             //{
             //    Console.WriteLine("Congrats that answer is correct\n");
             //    Score++;
