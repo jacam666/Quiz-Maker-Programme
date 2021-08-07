@@ -104,17 +104,34 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard7);
                 GameCards.Add(GameCard8);
                 GameCards.Add(GameCard9);
-                GameCards.Add(GameCard10);               
-                   
-                    for (int i = 0; i < GameCards.Count; i++)
-                    {
-                        Random rnd = new();
-                        int RandomIndex = rnd.Next(GameCards.Count);
-                        UI.AskUserForAnswer(GameCards[RandomIndex]);
-                    }
+                GameCards.Add(GameCard10);
 
-                   
+                for (int i = 0; i < GameCards.Count; i++)
+                {
+                    Random rnd = new();
+                    int RandomIndex = rnd.Next(GameCards.Count);
+                    UI.AskUserForAnswer(GameCards[RandomIndex]);
+                }
             }
+            //int Score = 0;
+            //int attempts = 10;
+            //string Choice = Console.ReadLine().ToUpper();
+
+            //if (Choice == GameCards.CorrectAnswer)
+            //{
+            //    Console.WriteLine("Congrats that answer is correct\n");
+            //    Score++;
+            //    Console.WriteLine("score = " + Score);
+            //}
+
+            //else
+            //{
+            //    Console.WriteLine("Unlucky that is a wrong answer\n");
+            //    attempts -= 1;
+            //    attempts--;
+            //}
+            //Console.WriteLine($"You have {attempts} attempts remaining\n");
+
 
 
 

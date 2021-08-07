@@ -102,27 +102,17 @@ namespace Quiz_Maker_Programme
         /// asks user for an answer and displays if that is correct or incorrect. also informs user of 1 attempt lost if the answer is incorrect
         /// </summary>
         /// <param name="gc"></param>
-        public static void AskUserForAnswer(QuestionAndAnswer gc)
-        {
-            int Score = 0;
-            int attempts = 10;
-            
+        public static bool AskUserForAnswer(QuestionAndAnswer gc)
+        {            
             DisplayAgameCard(gc);
+
             string Choice = Console.ReadLine().ToUpper();
 
             if (Choice == gc.CorrectAnswer)
             {
-                Console.WriteLine("Congrats that answer is correct\n");
-                Score += 1;
-                Console.WriteLine("score = " + Score);
+                return true;               
             }
-            else
-            {
-                Console.WriteLine("Unlucky that is a wrong answer\n");
-                attempts -= 1;
-            }
-            Console.WriteLine($"You have {attempts} attempts remaining\n");
-
+            return false;
         }
 
 
