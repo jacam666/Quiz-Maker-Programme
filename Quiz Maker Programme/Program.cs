@@ -92,8 +92,10 @@ namespace Quiz_Maker_Programme
             GameCard10.Answers.Add("D)  Kidneys");
             GameCard10.CorrectAnswer = "A";
 
-            List<QuestionAndAnswer> GameCards = new();
+            //List<QuestionAndAnswer> GameCards = new();
+
             {
+                HashSet<QuestionAndAnswer> GameCards = new();
 
                 GameCards.Add(GameCard1);
                 GameCards.Add(GameCard2);
@@ -106,6 +108,8 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard9);
                 GameCards.Add(GameCard10);
 
+                
+
                 int Score = 0;
                 int attempts = 10;
                 while (attempts > 0)
@@ -117,7 +121,14 @@ namespace Quiz_Maker_Programme
                         bool IfCorrectAnswer = UI.AskUserForAnswer(GameCards[RandomIndex]);
                         UI.DisplaysCorrectIncorrectAnswer(IfCorrectAnswer);
                         attempts--;
-                        Console.WriteLine($"You have { attempts} attempts left\n");
+                        
+                        if(IfCorrectAnswer)
+                        {
+                            Console.WriteLine($"Your current score is : {Score}\n");
+                            Score ++;
+                            
+                        }
+                        
                     }
                 }
                
