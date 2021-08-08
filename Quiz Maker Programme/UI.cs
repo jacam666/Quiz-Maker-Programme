@@ -107,24 +107,30 @@ namespace Quiz_Maker_Programme
             DisplayAgameCard(gc);
             
             string Choice = Console.ReadLine().ToUpper();
-            
-
             if (Choice == gc.CorrectAnswer)
             {
                 return true;
             }
-            return false;
-            
+            return false;           
         }
         
 
-        public static void IfCorrectAnswer()
+        public static bool IfCorrectAnswer(QuestionAndAnswer gc)
         {
-            Console.WriteLine("Congrats that answer is correct\n");
+            bool IfCorrectAnswer = AskUserForAnswer(gc);
+            if (IfCorrectAnswer)
+            {
+                Console.WriteLine("That answer is correct");
+            }
+            else
+            {
+                Console.WriteLine("That is incorrect");
+            }
+            return true;
+           
         }
-
-
-
+           
+      
 
 
     }
