@@ -116,6 +116,7 @@ namespace Quiz_Maker_Programme
                         int RandomIndex = rnd.Next(GameCards.Count);
                         bool IfCorrectAnswer = UI.AskUserForAnswer(GameCards[RandomIndex]);
                         UI.DisplaysCorrectIncorrectAnswer(IfCorrectAnswer);
+                        attempts--;
                         
                     }
                 }
