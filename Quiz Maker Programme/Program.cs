@@ -117,38 +117,11 @@ namespace Quiz_Maker_Programme
                         bool IfCorrectAnswer = UI.AskUserForAnswer(GameCards[RandomIndex]);
                         UI.DisplaysCorrectIncorrectAnswer(IfCorrectAnswer);
                         attempts--;
-                        
+                        Console.WriteLine($"You have { attempts} attempts left\n");
                     }
                 }
-
-                
-                
-                //string Choice = Console.ReadLine().ToUpper();
-                //string CorrectAnswer;
-
                
-            }
-           
-
-            //int Score = 0;
-            //int attempts = 10;
-            //string Choice = Console.ReadLine().ToUpper();
-            //string 
-
-            //if (Choice == )
-            //{
-            //    Console.WriteLine("Congrats that answer is correct\n");
-            //    Score++;
-            //    Console.WriteLine("score = " + Score);
-            //}
-
-            //else
-            //{
-            //    Console.WriteLine("Unlucky that is a wrong answer\n");
-            //    attempts -= 1;
-            //    attempts--;
-            //}
-            //Console.WriteLine($"You have {attempts} attempts remaining\n");
+            }           
 
             //int attempts = 10;
             //Questions QuizQuestions = new();
