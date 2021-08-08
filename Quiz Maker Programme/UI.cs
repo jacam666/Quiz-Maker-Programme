@@ -18,8 +18,6 @@ namespace Quiz_Maker_Programme
             playerName = Console.ReadLine();
             Console.WriteLine($"Welcome to my Quiz Game {playerName} are you ready to play? ");
             Console.WriteLine($"You start the game with 10 attempts, good luck\n");
-
-
         }
         /// <summary>
         /// gives the user an option to play
@@ -114,24 +112,16 @@ namespace Quiz_Maker_Programme
             return false;           
         }
         
-
-        public static bool IfCorrectAnswer(QuestionAndAnswer gc)
-        {
-            bool IfCorrectAnswer = AskUserForAnswer(gc);
-            if (IfCorrectAnswer)
+        public static void DisplaysCorrectIncorrectAnswer(bool IsCorrect)
+        {           
+            if (IsCorrect)
             {
                 Console.WriteLine("That answer is correct");
             }
             else
             {
-                Console.WriteLine("That is incorrect");
-            }
-            return true;
-           
+                Console.WriteLine("That answer is incorrect");
+            }          
         }
-           
-      
-
-
     }
 }
