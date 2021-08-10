@@ -108,7 +108,7 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(GameCard9);
                 GameCards.Add(GameCard10);
 
-                
+
 
                 int Score = 0;
                 int attempts = 10;
@@ -118,23 +118,21 @@ namespace Quiz_Maker_Programme
                     {
                         Random rnd = new();
                         int RandomIndex = rnd.Next(GameCards.Count);
+
                         QuestionAndAnswer aRandomGameCard = GameCards[RandomIndex];
                         bool IsCorrectAnswer = UI.AskUserForAnswer(aRandomGameCard);
 
                         UI.DisplaysCorrectIncorrectAnswer(IsCorrectAnswer);
                         attempts--;
-                        
-                        if(IsCorrectAnswer)
+
+                        if (IsCorrectAnswer)
                         {
-                            Console.WriteLine($"Your current score is : {Score}\n");
-                            Score ++;
-                            
+                            UI.DisplayScore(Score);
+                            Score++;
                         }
-                        
                     }
                 }
-               
-            }           
+            }
 
             //int attempts = 10;
             //Questions QuizQuestions = new();

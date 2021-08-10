@@ -123,6 +123,10 @@ namespace Quiz_Maker_Programme
                 Console.WriteLine("That answer is incorrect");
             }          
         }
+        public static void DisplayScore(int s)
+        {
+            Console.WriteLine($"Your current score is : {s}\n");
+        }
 
        
     }
