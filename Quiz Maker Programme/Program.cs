@@ -12,7 +12,9 @@ namespace Quiz_Maker_Programme
             UI.DisplayWelcomeMessage();
             UI.DecisionToPlay();
             {
-                string text = System.IO.File.ReadAllText(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.zip");
+                //string text = System.IO.File.ReadAllText(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.zip");
+                string[] lines = System.IO.File.ReadAllLines(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.zip");
+                
             }
 
 
