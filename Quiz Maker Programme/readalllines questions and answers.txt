@@ -1,0 +1,82 @@
+
+           
+            
+            What country won the very first fifa world cup?
+            A Germany
+            B Italy
+            C UK
+            D Russia
+            E Uruguay
+            E
+
+            
+            What year was the very first fifa world cup?
+            A 1930
+            B 1918
+            C 1934
+            D 1940
+            A
+
+            
+            Whats the shortcut for the 'copy' function in most computers?
+            A ctrl A");
+            B ctrl C");
+            C ctrl 9");
+            D ctrl D");
+            B
+
+            
+            Which animal can be seen in the Porsche logo?
+            A Lion
+            B Tiger
+            C Elephant
+            D Horse
+            D
+
+            
+            What was Twitters original name?";
+            A Twitter
+            B Twitch
+            C Twicker
+            D InstaTwitch
+            A
+
+            
+            What is the common name for dried plums?
+            A Prunes
+            B Raisins
+            C Saltanas
+            D Dates
+            A
+
+            
+            What is the primary ingredient in hummus?
+            A Rice
+            B ChickPeas
+            C Beans
+            D Eggs
+            B
+
+            
+            Which country produces the most coffee in the world?
+            A Columbia
+            B Usa
+            C Brazil
+            D Mexico
+            C
+
+           
+            Which country is responsible for giving us pizza and pasta?
+            A England
+            B Poland
+            C Italy
+            D Russia
+            C
+
+            
+            Which organ has four chambers?";
+            A Heart
+            B Lungs
+            C Liver
+            D Kidneys
+            A
