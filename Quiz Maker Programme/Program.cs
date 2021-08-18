@@ -9,106 +9,19 @@ namespace Quiz_Maker_Programme
     {
         static void Main(string[] args)
         {
-            UI.DisplayWelcomeMessage();
-            UI.DecisionToPlay();
+            //UI.DisplayWelcomeMessage();
+            //UI.DecisionToPlay();
             {
-                string text = System.IO.File.ReadAllText(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.txt");
+
                 string[] Lines = System.IO.File.ReadAllLines(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.txt");
-                foreach  (var Line in Lines)
-                {
-                    Console.WriteLine(Line);
+
+                for (int i = 0; i < 5; i++)
+                {                   
+                    Console.WriteLine(Lines[i]);                  
                 }
+
                 
-
             }
-
-
-
-
-
-
-
-
-            //QuestionAndAnswer GameCard1 = new();
-            //GameCard1.Question = "What country won the very first fifa world cup?";
-            //GameCard1.Answers.Add("A)  Germany");
-            //GameCard1.Answers.Add("B)  Italy");
-            //GameCard1.Answers.Add("C)  UK");
-            //GameCard1.Answers.Add("D)  Russia");
-            //GameCard1.Answers.Add("E)  Uruguay");
-            //GameCard1.CorrectAnswer = "E";
-
-            //QuestionAndAnswer GameCard2 = new();
-            //GameCard2.Question = "What year was the very first fifa world cup?";
-            //GameCard2.Answers.Add("A)  1930");
-            //GameCard2.Answers.Add("B)  1918");
-            //GameCard2.Answers.Add("C)  1934");
-            //GameCard2.Answers.Add("D)  1940");
-            //GameCard2.CorrectAnswer = "A";
-
-            //QuestionAndAnswer GameCard3 = new();
-            //GameCard3.Question = "Whats the shortcut for the 'copy' function in most computers?";
-            //GameCard3.Answers.Add("A)  ctrl A");
-            //GameCard3.Answers.Add("B)  ctrl C");
-            //GameCard3.Answers.Add("C)  ctrl 9");
-            //GameCard3.Answers.Add("D)  ctrl D");
-            //GameCard3.CorrectAnswer = "B";
-
-            //QuestionAndAnswer GameCard4 = new();
-            //GameCard4.Question = "Which animal can be seen in the Porsche logo?";
-            //GameCard4.Answers.Add("A)  Lion");
-            //GameCard4.Answers.Add("B)  Tiger");
-            //GameCard4.Answers.Add("C)  Elephant");
-            //GameCard4.Answers.Add("D)  Horse");
-            //GameCard4.CorrectAnswer = "D";
-
-            //QuestionAndAnswer GameCard5 = new();
-            //GameCard5.Question = "What was Twitters original name?";
-            //GameCard5.Answers.Add("A)  Twitter");
-            //GameCard5.Answers.Add("B)  Twitch");
-            //GameCard5.Answers.Add("C)  Twicker");
-            //GameCard5.Answers.Add("D)  InstaTwitch");
-            //GameCard5.CorrectAnswer = "A";
-
-            //QuestionAndAnswer GameCard6 = new();
-            //GameCard6.Question = "What is the common name for dried plums?";
-            //GameCard6.Answers.Add("A)  Prunes");
-            //GameCard6.Answers.Add("B)  Raisins");
-            //GameCard6.Answers.Add("C)  Saltanas");
-            //GameCard6.Answers.Add("D)  Dates");
-            //GameCard6.CorrectAnswer = "A";
-
-            //QuestionAndAnswer GameCard7 = new();
-            //GameCard7.Question = "What is the primary ingredient in hummus?";
-            //GameCard7.Answers.Add("A)  Rice");
-            //GameCard7.Answers.Add("B)  ChickPeas");
-            //GameCard7.Answers.Add("C)  Beans");
-            //GameCard7.Answers.Add("D)  Eggs");
-            //GameCard7.CorrectAnswer = "B";
-
-            //QuestionAndAnswer GameCard8 = new();
-            //GameCard8.Question = "Which country produces the most coffee in the world?";
-            //GameCard8.Answers.Add("A)  Columbia");
-            //GameCard8.Answers.Add("B)  Usa");
-            //GameCard8.Answers.Add("C)  Brazil");
-            //GameCard8.Answers.Add("D)  Mexico");
-            //GameCard8.CorrectAnswer = "C";
-
-            //QuestionAndAnswer GameCard9 = new();
-            //GameCard9.Question = "Which country is responsible for giving us pizza and pasta?";
-            //GameCard9.Answers.Add("A)  England");
-            //GameCard9.Answers.Add("B)  Poland");
-            //GameCard9.Answers.Add("C)  Italy");
-            //GameCard9.Answers.Add("D)  Russia");
-            //GameCard9.CorrectAnswer = "C";
-
-            //QuestionAndAnswer GameCard10 = new();
-            //GameCard10.Question = "Which organ has four chambers?";
-            //GameCard10.Answers.Add("A)  Heart");
-            //GameCard10.Answers.Add("B)  Lungs");
-            //GameCard10.Answers.Add("C)  Liver");
-            //GameCard10.Answers.Add("D)  Kidneys");
-            //GameCard10.CorrectAnswer = "A";
 
             ///go through every line of thet file (you'll get those as strings) File.ReadAllLines()
             ///for each question / answer / etc
