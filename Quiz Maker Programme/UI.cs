@@ -81,11 +81,14 @@ namespace Quiz_Maker_Programme
             Console.WriteLine($"Your current score is : {s}\n");
         }
 
-       public static void DisplayTotalEndScore(int s)
-        { 
-            Console.WriteLine($"You scored {s} out of 10");
+        //public static void DisplayTotalEndScore(int s)
+        //{
+        //    Console.WriteLine($"You scored {s} out of 10");
+        //}
+        public static void DisplayTotalEndScore(int s,int  gc)
+        {
+            Console.WriteLine($"You scored {s} out of {gc}");
         }
-        
 
 
     }
