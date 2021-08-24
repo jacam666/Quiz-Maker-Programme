@@ -14,14 +14,14 @@ namespace Quiz_Maker_Programme
 
             string[] Lines = System.IO.File.ReadAllLines(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.txt");
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i += 6)
             {
                 var gc = new QuestionAndAnswer();
                 gc.Question = Lines[i];
                 gc.Answers.Add(Lines[i + 1]);
-                Console.WriteLine(gc.Question);
+
             }
-            Console.ReadLine();
+            //Console.ReadLine();
 
             ///go through every line of thet file (you'll get those as strings) File.ReadAllLines()
             ///for each question / answer / etc
@@ -29,8 +29,20 @@ namespace Quiz_Maker_Programme
             ///add the strings you gort from the file to the gamecard
             ///add this gamecard to your list
             List<QuestionAndAnswer> GameCards = new();
+            for (int i = 0; i < Lines.Length; i += 6) 
+            {
+                var gc = new QuestionAndAnswer();
+                gc.Question = Lines[i];
+                for (int j = 0; j < 4; j++) 
+                {
+                    gc.Answers.Add(Lines[i + 1 + j]);
+                }
+                gc.CorrectAnswer = Lines[i + 5];
+                GameCards.Add(gc);
+            }
 
             //GameCards.Add(GameCard1);
+            //GameCards.Add(GameCard2);
             //GameCards.Add(GameCard2);
             //GameCards.Add(GameCard3);
             //GameCards.Add(GameCard4);
@@ -40,9 +52,10 @@ namespace Quiz_Maker_Programme
             //GameCards.Add(GameCard8);
             //GameCards.Add(GameCard9);
             //GameCards.Add(GameCard10);
-            
 
-            //QuestionAndAnswer theLastcard = GameCards.Find(g => g.CorrectAnswer == "B");
+
+
+
 
             Random rnd = new();
             List<QuestionAndAnswer> randomlyOrderdQuestions = GameCards.OrderBy(g => rnd.Next()).ToList();
@@ -68,6 +81,45 @@ namespace Quiz_Maker_Programme
                     }
                 }
             }
+
+            //GameCards.Add(GameCard1);
+            //GameCards.Add(GameCard2);
+            //GameCards.Add(GameCard3);
+            //GameCards.Add(GameCard4);
+            //GameCards.Add(GameCard5);
+            //GameCards.Add(GameCard6);
+            //GameCards.Add(GameCard7);
+            //GameCards.Add(GameCard8);
+            //GameCards.Add(GameCard9);
+            //GameCards.Add(GameCard10);
+
+
+            //QuestionAndAnswer theLastcard = GameCards.Find(g => g.CorrectAnswer == "B");
+
+            //Random rnd = new();
+            //List<QuestionAndAnswer> randomlyOrderdQuestions = GameCards.OrderBy(g => rnd.Next()).ToList();
+
+            //int Score = 0;
+            //int attempts = 10;
+            //while (attempts > 0)  //do we need this loop?
+            //{
+            //    for (int i = 0; i < GameCards.Count; i++) //do this for everty gamecard
+            //    {
+            //        int RandomIndex = rnd.Next(GameCards.Count);
+
+            //        QuestionAndAnswer aRandomGameCard = randomlyOrderdQuestions[i];    //maybe loop this for more attemts at the same question
+            //        bool IsCorrectAnswer = UI.AskUserForAnswer(aRandomGameCard);   //maybe loop this for more attemts at the same question
+            //                                                                       //maybe loop this for more attemts at the same question
+            //        UI.DisplaysCorrectIncorrectAnswer(IsCorrectAnswer);            //maybe loop this for more attemts at the same question
+            //        attempts--;                                                    //maybe loop this for more attemts at the same question
+            //                                                                       //maybe loop this for more attemts at the same question
+            //        if (IsCorrectAnswer)                                           //maybe loop this for more attemts at the same question
+            //        {                                                              //maybe loop this for more attemts at the same question
+            //            UI.DisplayScore(Score);                                    //maybe loop this for more attemts at the same question
+            //            Score++;                                                   //maybe loop this for more attemts at the same question
+            //        }
+            //    }
+            //}
             //while (attempts > 0)
             //{
             //    Console.WriteLine("Q1):" + QuizQuestions.FirstQuestion + " " + MultipleAnswers.FirstQuestionAnswers);
