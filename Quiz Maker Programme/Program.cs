@@ -41,22 +41,6 @@ namespace Quiz_Maker_Programme
                 GameCards.Add(gc);
             }
 
-            //GameCards.Add(GameCard1);
-            //GameCards.Add(GameCard2);
-            //GameCards.Add(GameCard2);
-            //GameCards.Add(GameCard3);
-            //GameCards.Add(GameCard4);
-            //GameCards.Add(GameCard5);
-            //GameCards.Add(GameCard6);
-            //GameCards.Add(GameCard7);
-            //GameCards.Add(GameCard8);
-            //GameCards.Add(GameCard9);
-            //GameCards.Add(GameCard10);
-
-
-
-
-
             Random rnd = new();
             List<QuestionAndAnswer> randomlyOrderdQuestions = GameCards.OrderBy(g => rnd.Next()).ToList();
 
@@ -81,19 +65,6 @@ namespace Quiz_Maker_Programme
                     }
                 }
             }
-
-            //GameCards.Add(GameCard1);
-            //GameCards.Add(GameCard2);
-            //GameCards.Add(GameCard3);
-            //GameCards.Add(GameCard4);
-            //GameCards.Add(GameCard5);
-            //GameCards.Add(GameCard6);
-            //GameCards.Add(GameCard7);
-            //GameCards.Add(GameCard8);
-            //GameCards.Add(GameCard9);
-            //GameCards.Add(GameCard10);
-
-
             //QuestionAndAnswer theLastcard = GameCards.Find(g => g.CorrectAnswer == "B");
 
             //Random rnd = new();

@@ -9,7 +9,8 @@ A 1930
 B 1918
 C 1934
 D 1940
-What's the shortcut for the 'copy' function in most computers?
+A
+Whats the shortcut for the 'copy' function in most computers?
 A ctrl A
 B ctrl C
 C ctrl 9
