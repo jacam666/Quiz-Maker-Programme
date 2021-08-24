@@ -3,7 +3,7 @@ A Germany
 B Italy
 C Uk
 D Uruguay
-D          
+D
 What year was the very first fifa world cup?
 A 1930
 B 1918
@@ -15,43 +15,43 @@ A ctrl A
 B ctrl C
 C ctrl 9
 D ctrl D
-B            
+B
 Which animal can be seen in the Porsche logo?
 A Lion
 B Tiger
 C Elephant
 D Horse
-D           
+D
 What was Twitters original name?";
 A Twitter
 B Twitch
 C Twicker
 D InstaTwitch
-A            
+A
 What is the common name for dried plums?
 A Prunes
 B Raisins
 C Saltanas
 D Dates
-A           
+A
 What is the primary ingredient in hummus?
 A Rice
 B ChickPeas
 C Beans
 D Eggs
-B           
+B
 Which country produces the most coffee in the world?
 A Columbia
 B Usa
 C Brazil
 D Mexico
-C         
+C
 Which country is responsible for giving us pizza and pasta?
 A England
 B Poland
 C Italy
 D Russia
-C            
+C
 Which organ has four chambers?";
 A Heart
 B Lungs

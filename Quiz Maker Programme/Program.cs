@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Quiz_Maker_Programme
 {
@@ -29,11 +28,11 @@ namespace Quiz_Maker_Programme
             ///add the strings you gort from the file to the gamecard
             ///add this gamecard to your list
             List<QuestionAndAnswer> GameCards = new();
-            for (int i = 0; i < Lines.Length; i += 6) 
+            for (int i = 0; i < Lines.Length; i += 6)
             {
                 var gc = new QuestionAndAnswer();
                 gc.Question = Lines[i];
-                for (int j = 0; j < 4; j++) 
+                for (int j = 0; j < 4; j++)
                 {
                     gc.Answers.Add(Lines[i + 1 + j]);
                 }
@@ -46,9 +45,8 @@ namespace Quiz_Maker_Programme
 
             int Score = 0;
             int attempts = 10;
-            while (attempts > 0)  //do we need this loop?
-            {
-                for (int i = 0; i < GameCards.Count; i++) //do this for everty gamecard
+            
+                for (int i = 0; i < GameCards.Count; i++) //do this for every gamecard
                 {
                     int RandomIndex = rnd.Next(GameCards.Count);
 
@@ -64,7 +62,7 @@ namespace Quiz_Maker_Programme
                         Score++;                                                   //maybe loop this for more attemts at the same question
                     }
                 }
-            }
+            
 
             //QuestionAndAnswer theLastcard = GameCards.Find(g => g.CorrectAnswer == "B");
 
