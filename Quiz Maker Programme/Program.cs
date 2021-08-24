@@ -43,7 +43,7 @@ namespace Quiz_Maker_Programme
             Random rnd = new();
             List<QuestionAndAnswer> randomlyOrderdQuestions = GameCards.OrderBy(g => rnd.Next()).ToList();
 
-            int Score = 0;
+            int Score = 1;
             int attempts = 10;
             
                 for (int i = 0; i < GameCards.Count; i++) //do this for every gamecard
@@ -62,7 +62,7 @@ namespace Quiz_Maker_Programme
                         Score++;                                                   //maybe loop this for more attemts at the same question
                     }
                 }
-            
+            Console.WriteLine($"You scored {Score} out of {GameCards.Count}");
 
             //QuestionAndAnswer theLastcard = GameCards.Find(g => g.CorrectAnswer == "B");
 
