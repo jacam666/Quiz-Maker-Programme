@@ -65,6 +65,7 @@ namespace Quiz_Maker_Programme
                     }
                 }
             }
+
             //QuestionAndAnswer theLastcard = GameCards.Find(g => g.CorrectAnswer == "B");
 
             //Random rnd = new();
