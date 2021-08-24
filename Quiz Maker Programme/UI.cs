@@ -64,7 +64,10 @@ namespace Quiz_Maker_Programme
             }
             return false;
         }
-
+        /// <summary>
+        /// informs user if answer is correct or incorrect
+        /// </summary>
+        /// <param name="IsCorrect"></param>
         public static void DisplaysCorrectIncorrectAnswer(bool IsCorrect)
         {
             if (IsCorrect)
@@ -76,15 +79,19 @@ namespace Quiz_Maker_Programme
                 Console.WriteLine("That answer is incorrect");
             }
         }
+        /// <summary>
+        /// displays score
+        /// </summary>
+        /// <param name="s"></param>
         public static void DisplayScore(int s)
         {
-            Console.WriteLine($"Your current score is : {s}\n");
+            Console.WriteLine($"Your current score is : {s}\n");         
         }
-
-        //public static void DisplayTotalEndScore(int s)
-        //{
-        //    Console.WriteLine($"You scored {s} out of 10");
-        //}
+        /// <summary>
+        /// displays total score at the end of the game
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="gc"></param>
         public static void DisplayTotalEndScore(int s,int  gc)
         {
             Console.WriteLine($"You scored {s} out of {gc}");
