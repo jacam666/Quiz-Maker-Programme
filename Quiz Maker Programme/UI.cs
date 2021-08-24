@@ -35,8 +35,8 @@ namespace Quiz_Maker_Programme
             }
             return wantsToPlay;
         }
-      
-              
+
+
         /// <summary>
         /// Displays a game card
         /// </summary>
@@ -56,17 +56,17 @@ namespace Quiz_Maker_Programme
         public static bool AskUserForAnswer(QuestionAndAnswer gc)
         {
             DisplayAgameCard(gc);
-            
+
             string Choice = Console.ReadLine().ToUpper();
             if (Choice == gc.CorrectAnswer)
             {
                 return true;
             }
-            return false;           
+            return false;
         }
-        
+
         public static void DisplaysCorrectIncorrectAnswer(bool IsCorrect)
-        {           
+        {
             if (IsCorrect)
             {
                 Console.WriteLine("That answer is correct");
@@ -74,13 +74,19 @@ namespace Quiz_Maker_Programme
             else
             {
                 Console.WriteLine("That answer is incorrect");
-            }          
+            }
         }
         public static void DisplayScore(int s)
         {
             Console.WriteLine($"Your current score is : {s}\n");
         }
 
-       
+       public static void DisplayTotalEndScore(int s)
+        { 
+            Console.WriteLine($"You scored {s} out of 10");
+        }
+        
+
+
     }
 }

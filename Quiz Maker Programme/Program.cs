@@ -8,8 +8,8 @@ namespace Quiz_Maker_Programme
     {
         static void Main(string[] args)
         {
-            //UI.DisplayWelcomeMessage();
-            //UI.DecisionToPlay();
+            UI.DisplayWelcomeMessage();
+            UI.DecisionToPlay();
 
             string[] Lines = System.IO.File.ReadAllLines(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.txt");
 
@@ -62,7 +62,8 @@ namespace Quiz_Maker_Programme
                         Score++;                                                   //maybe loop this for more attemts at the same question
                     }
                 }
-            Console.WriteLine($"You scored {Score} out of {GameCards.Count}");
+            UI.DisplayTotalEndScore(Score);
+            //Console.WriteLine($"You scored {Score} out of {GameCards.Count}");
 
             //QuestionAndAnswer theLastcard = GameCards.Find(g => g.CorrectAnswer == "B");
 
