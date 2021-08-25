@@ -8,8 +8,8 @@ namespace Quiz_Maker_Programme
     {
         static void Main(string[] args)
         {
-            //UI.DisplayWelcomeMessage();
-            //UI.DecisionToPlay();
+            UI.DisplayWelcomeMessage();
+            UI.DecisionToPlay();
 
             string[] Lines = System.IO.File.ReadAllLines(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.txt");
 

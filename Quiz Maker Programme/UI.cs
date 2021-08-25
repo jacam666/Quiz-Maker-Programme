@@ -93,6 +93,10 @@ namespace Quiz_Maker_Programme
         public static void DisplayTotalEndScore(int s,int  gc)
         {
             Console.WriteLine($"You scored {s} out of {gc}");
+            if (s == 10)
+            {
+                Console.WriteLine("Congrats you got every question correct!!!!!!");
+            }
         }
         /// <summary>
         /// Displays current amount of attempts the user has left
