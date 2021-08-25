@@ -97,6 +97,10 @@ namespace Quiz_Maker_Programme
             {
                 Console.WriteLine("Congrats you got every question correct!!!!!!");
             }
+            if (s < 5)
+            {
+                Console.WriteLine("Better luck next time");
+            }
         }
         /// <summary>
         /// Displays current amount of attempts the user has left
