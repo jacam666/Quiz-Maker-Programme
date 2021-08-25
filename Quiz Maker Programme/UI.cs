@@ -16,7 +16,7 @@ namespace Quiz_Maker_Programme
             string playerName;
             Console.Write("Hi there please enter your name: ");
             playerName = Console.ReadLine();
-            Console.WriteLine($"Welcome to my Quiz Game {playerName} are you ready to play? ");
+            Console.WriteLine($"Welcome to my Quiz Game {playerName}");
             Console.WriteLine($"You start the game with 10 attempts, good luck\n");
         }
         /// <summary>
@@ -35,8 +35,6 @@ namespace Quiz_Maker_Programme
             }
             return wantsToPlay;
         }
-
-
         /// <summary>
         /// Displays a game card
         /// </summary>
@@ -95,6 +93,11 @@ namespace Quiz_Maker_Programme
         public static void DisplayTotalEndScore(int s,int  gc)
         {
             Console.WriteLine($"You scored {s} out of {gc}");
+        }
+
+        public static void DisplayAttemptsRemaining(int Tries)
+        {
+            Console.WriteLine($"Attempts remaining {Tries}\n");
         }
 
 

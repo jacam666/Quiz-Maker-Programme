@@ -8,8 +8,8 @@ namespace Quiz_Maker_Programme
     {
         static void Main(string[] args)
         {
-            UI.DisplayWelcomeMessage();
-            UI.DecisionToPlay();
+            //UI.DisplayWelcomeMessage();
+            //UI.DecisionToPlay();
 
             string[] Lines = System.IO.File.ReadAllLines(@"C:\Users\ja6ca\source\repos\Quiz Maker Programme\Quiz Maker Programme\readalllines questions and answers.txt");
 
@@ -43,7 +43,7 @@ namespace Quiz_Maker_Programme
             List<QuestionAndAnswer> randomlyOrderdQuestions = GameCards.OrderBy(g => rnd.Next()).ToList();
 
             int Score = 0;
-            int attempts = 10;
+            int Attempts = 10;
 
             for (int i = 0; i < GameCards.Count; i++) //do this for every gamecard
             {
@@ -53,13 +53,16 @@ namespace Quiz_Maker_Programme
                 bool IsCorrectAnswer = UI.AskUserForAnswer(aRandomGameCard);   //maybe loop this for more attemts at the same question
                                                                                //maybe loop this for more attemts at the same question
                 UI.DisplaysCorrectIncorrectAnswer(IsCorrectAnswer);            //maybe loop this for more attemts at the same question
-                attempts--;                                                    //maybe loop this for more attemts at the same question
+                                                                               //maybe loop this for more attemts at the same question
                                                                                //maybe loop this for more attemts at the same question
                 if (IsCorrectAnswer)                                           //maybe loop this for more attemts at the same question
-                {                                                              //maybe loop this for more attemts at the same question
-                    UI.DisplayScore(Score);                                    //maybe loop this for more attemts at the same question
-                    Score++;                                                   //maybe loop this for more attemts at the same question
+                {
+                    Score++;  
+                    UI.DisplayScore(Score);                                    //maybe loop this for more attemts at the same question           
                 }
+                Attempts -= 1;
+                UI.DisplayAttemptsRemaining(Attempts);
+                
             }
             UI.DisplayTotalEndScore(Score, GameCards.Count);
             
