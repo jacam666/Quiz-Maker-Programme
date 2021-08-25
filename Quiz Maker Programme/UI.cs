@@ -94,7 +94,10 @@ namespace Quiz_Maker_Programme
         {
             Console.WriteLine($"You scored {s} out of {gc}");
         }
-
+        /// <summary>
+        /// Displays current amount of attempts the user has left
+        /// </summary>
+        /// <param name="Tries"></param>
         public static void DisplayAttemptsRemaining(int Tries)
         {
             Console.WriteLine($"Attempts remaining {Tries}\n");

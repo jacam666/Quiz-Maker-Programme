@@ -18,9 +18,7 @@ namespace Quiz_Maker_Programme
                 var gc = new QuestionAndAnswer();
                 gc.Question = Lines[i];
                 gc.Answers.Add(Lines[i + 1]);
-
             }
-
             ///go through every line of thet file (you'll get those as strings) File.ReadAllLines()
             ///for each question / answer / etc
             ///create a new gamecard, 
@@ -53,16 +51,14 @@ namespace Quiz_Maker_Programme
                 bool IsCorrectAnswer = UI.AskUserForAnswer(aRandomGameCard);   //maybe loop this for more attemts at the same question
                                                                                //maybe loop this for more attemts at the same question
                 UI.DisplaysCorrectIncorrectAnswer(IsCorrectAnswer);            //maybe loop this for more attemts at the same question
-                                                                               //maybe loop this for more attemts at the same question
-                                                                               //maybe loop this for more attemts at the same question
+                                                                               //maybe loop this for more attemts at the same question                                                                              //maybe loop this for more attemts at the same question
                 if (IsCorrectAnswer)                                           //maybe loop this for more attemts at the same question
                 {
                     Score++;  
                     UI.DisplayScore(Score);                                    //maybe loop this for more attemts at the same question           
                 }
                 Attempts -= 1;
-                UI.DisplayAttemptsRemaining(Attempts);
-                
+                UI.DisplayAttemptsRemaining(Attempts);               
             }
             UI.DisplayTotalEndScore(Score, GameCards.Count);
             
